@@ -19,7 +19,7 @@ class People(Base):
     hair_color = Column(String)
     height = Column(Integer)
     homeworld = Column(String)
-    mass = Column(Integer)
+    mass = Column(String)
     name = Column(String)
     skin_color = Column(String)
     species = Column(Text)
