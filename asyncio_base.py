@@ -17,7 +17,7 @@ class People(Base):
     films = Column(Text)
     gender = Column(String)
     hair_color = Column(String)
-    height = Column(Integer)
+    height = Column(String)
     homeworld = Column(String)
     mass = Column(String)
     name = Column(String)

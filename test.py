@@ -43,7 +43,7 @@ async def get_vehicles(session, vehicles_url):
 
 async def main():
     async with aiohttp.ClientSession() as session:
-        coroutines = (get_people(session, i) for i in range(1, 20))
+        coroutines = (get_people(session, i) for i in range(1, 100))
         result = await asyncio.gather(*coroutines)
         for item in result:
             if 'url' not in item.keys():
